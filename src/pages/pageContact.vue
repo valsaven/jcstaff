@@ -35,13 +35,12 @@
             <span class="contact-form__bullet">■</span><b>本文</b>
           </div>
           <textarea
+            class="contact-form__textarea"
             name="comment"
             rows="8"
             cols="80"
             spellcheck="false"
             data-gramm="false"
-            style="width: 629px;
-            height: 203px;"
           />
 
           <input class="contact-form__button" type="submit" id="submit_button" name="" value="送信"/>
@@ -106,6 +105,13 @@ export default defineComponent({
         &__bullet {
           color: #f8b500;
           margin-right: .4rem;
+        }
+
+        &__textarea {
+          margin-bottom: 1rem;
+          max-width: 600px;
+          resize: vertical;
+          width: 100%;
         }
 
         &__button {

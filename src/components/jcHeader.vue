@@ -2,31 +2,43 @@
   <div class="jc-header">
     <!-- Logo -->
     <div class="jc-header-logo">
-      <a href="http://www.jcstaff.co.jp" target="_blank">
+      <router-link
+        v-slot="{ href, navigate, isActive }"
+        to="/"
+      >
         <img src="/logo.gif" class="logo" alt="J.C.STAFF" />
-      </a>
+      </router-link>
     </div>
 
     <!-- Menu -->
     <ul class="jc-header-menu">
-      <li
-        v-for="item in menuItems"
-        class="menu-item"
+      <router-link
+        v-for="(item, i) in menuItems"
+        :key="i"
+        v-slot="{ href, navigate, isActive }"
+        :to="`/${item}`"
+        custom
       >
-        <!-- Text -->
-        <div
-          class="menu-item__text"
-          v-text="item.toUpperCase()"
-        />
-        <!-- Underline -->
-        <div :class="`menu-item__underline menu-item__underline--${item}`"/>
-      </li>
+        <li
+          class="menu-item"
+          @click="navigate"
+        >
+          <!-- Text -->
+          <div
+            class="menu-item__text"
+            v-text="item.toUpperCase()"
+          />
+
+          <!-- Underline -->
+          <div :class="`menu-item__underline menu-item__underline--${item}`"/>
+        </li>
+      </router-link>
     </ul>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { defineComponent } from 'vue';
 
 export default defineComponent({
   data() {
@@ -44,8 +56,8 @@ export default defineComponent({
 
   methods: {},
 
-  mounted() {}
-})
+  mounted() {},
+});
 </script>
 
 <style lang="scss">
@@ -68,6 +80,8 @@ export default defineComponent({
     list-style-type: none;
 
     .menu-item {
+      cursor: pointer;
+
       &__text {
         font-size: 1.2rem;
         font-weight: bold;

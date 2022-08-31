@@ -3,7 +3,7 @@ import jcHeader from './components/jcHeader.vue';
 import jcMain from './components/jcMain.vue';
 import jcFooter from './components/jcFooter.vue';
 
-import pageContact from './components/pages/pageContact.vue';
+import pageContact from './pages/pageContact.vue';
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import pageContact from './components/pages/pageContact.vue';
   </div>
   <jc-header></jc-header>
 
-  <page-contact />
+  <router-view />
 
   <jc-footer></jc-footer>
 </template>

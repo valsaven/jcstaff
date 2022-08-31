@@ -27,6 +27,7 @@ a:hover {
 body {
   margin: 0;
   display: flex;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", Helvetica, Arial, Verdana, sans-serif;
   min-width: 320px;
   min-height: 100vh;
 }

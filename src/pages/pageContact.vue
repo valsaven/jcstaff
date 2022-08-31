@@ -21,6 +21,8 @@
           <b>◆ 弊社への企画の御提案等に関するお願い。</b>
         </a>
 
+        <!-- TODO: Move pairs text-input to separate components -->
+        <!-- TODO: Add margin-bottom: 1rem for this components -->
         <div class="contact-form">
           <div>
             <span class="contact-form__bullet">■</span><b>お名前</b>

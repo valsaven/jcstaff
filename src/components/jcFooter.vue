@@ -1,7 +1,12 @@
 <template>
   <div class="jc-footer">
     <div>
-      >>J.C.STAFF WEBサイト TOPへ
+      <router-link
+        v-slot="{ href, navigate, isActive }"
+        to="/"
+      >
+        >>J.C.STAFF WEBサイト TOPへ
+      </router-link>
     </div>
     <div>
       © J.C.STAFF Co.,Ltd.

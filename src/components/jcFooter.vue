@@ -2,10 +2,11 @@
   <div class="jc-footer">
     <div>
       <router-link
-        v-slot="{ href, navigate, isActive }"
+        v-slot="{ navigate }"
         to="/"
+        custom
       >
-        >>J.C.STAFF WEBサイト TOPへ
+        <span class="jc-footer__link" @click="navigate">>>J.C.STAFF WEBサイト TOPへ</span>
       </router-link>
     </div>
     <div>
@@ -14,7 +15,7 @@
   </div>
 </template>
 
-<style>
+<style lang="scss">
 .jc-footer {
   align-items: center;
   background-color: #000;
@@ -22,5 +23,9 @@
   display: flex;
   height: 3rem;
   justify-content: space-around;
+
+  &__link {
+    cursor: pointer;
+  }
 }
 </style>

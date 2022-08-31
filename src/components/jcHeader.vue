@@ -51,8 +51,8 @@ export default defineComponent({
 <style lang="scss">
 .jc-header {
   align-items: center;
-  border-left: 0.2rem solid;
-  border-right: 0.2rem solid;
+  border-left: .2rem solid;
+  border-right: .2rem solid;
   display: flex;
   padding: 0 2rem;
 

@@ -1,9 +1,9 @@
 <script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 import jcHeader from './components/jcHeader.vue';
 import jcMain from './components/jcMain.vue';
 import jcFooter from './components/jcFooter.vue';
+
+import pageContact from './components/pages/pageContact.vue';
 </script>
 
 <template>
@@ -12,7 +12,7 @@ import jcFooter from './components/jcFooter.vue';
   </div>
   <jc-header></jc-header>
 
-  <jc-main msg="Vite + Vue" />
+  <page-contact />
 
   <jc-footer></jc-footer>
 </template>

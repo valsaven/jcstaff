@@ -73,7 +73,7 @@ export default defineComponent({
   border-left: .2rem solid;
   border-right: .2rem solid;
   display: flex;
-  height: auto;
+  height: 100%;
 
   .sidebar {
     background-color: #f6b506;

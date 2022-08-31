@@ -7,9 +7,6 @@ import pageContact from './pages/pageContact.vue';
 </script>
 
 <template>
-  <div>
-
-  </div>
   <jc-header></jc-header>
 
   <router-view />

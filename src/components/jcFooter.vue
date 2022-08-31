@@ -16,7 +16,11 @@
 
 <style>
 .jc-footer {
+  align-items: center;
   background-color: #000;
   color: #fff;
+  display: flex;
+  height: 3rem;
+  justify-content: space-around;
 }
 </style>

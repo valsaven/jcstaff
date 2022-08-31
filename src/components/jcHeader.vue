@@ -100,5 +100,14 @@ export default defineComponent({
       }
     }
   }
+
+  @media only screen and (max-width: 639px) {
+    flex-wrap: wrap;
+    padding: 0;
+
+    .jc-header-logo {
+      border: none;
+    }
+  }
 }
 </style>

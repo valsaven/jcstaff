@@ -9,28 +9,44 @@
 
     <!-- Menu -->
     <ul class="jc-header__menu jc-header-menu">
-      <li class="menu-item">
-        <div class="menu-item__text">COMPANY</div>
-        <div class="menu-item__line menu-item__line--company"/>
-      </li>
-
-      <li class="menu-item">
-        <div class="menu-item__text">WORKS</div>
-        <div class="menu-item__line menu-item__line--works"/>
-      </li>
-
-      <li class="menu-item">
-        <div class="menu-item__text">RECRUIT</div>
-        <div class="menu-item__line menu-item__line--recruit"/>
-      </li>
-
-      <li class="menu-item">
-        <div class="menu-item__text">CONTACT</div>
-        <div class="menu-item__line menu-item__line--contact"/>
+      <li
+        v-for="item in menuItems"
+        class="menu-item"
+      >
+        <!-- Text -->
+        <div
+          class="menu-item__text"
+          v-text="item.toUpperCase()"
+        />
+        <!-- Underline -->
+        <div :class="`menu-item__underline menu-item__underline--${item}`"/>
       </li>
     </ul>
   </div>
 </template>
+
+<script lang="ts">
+import { defineComponent } from 'vue'
+
+export default defineComponent({
+  data() {
+    return {
+      menuItems: [
+        'company',
+        'works',
+        'recruit',
+        'contact'
+      ],
+    }
+  },
+
+  computed: {},
+
+  methods: {},
+
+  mounted() {}
+})
+</script>
 
 <style lang="scss">
 .jc-header {
@@ -51,11 +67,12 @@
 
 .menu-item {
   &__text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: bold;
+    margin-bottom: 2px;
   }
 
-  &__line {
+  &__underline {
     height: 4px;
     width: 100%;
 

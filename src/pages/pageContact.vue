@@ -1,6 +1,12 @@
 <template>
   <div class="contact">
-    <div class="sidebar">Mailform ►</div>
+    <div class="sidebar">
+      <div class="sidebar__space" />
+
+      <div class="sidebar__item">
+        <span title="メールフォーム">Mailform</span><span class="sidebar__item--arrow">►</span>
+      </div>
+    </div>
 
     <div class="page">
       <div class="page__header">
@@ -74,10 +80,30 @@ export default defineComponent({
   display: flex;
   height: 100%;
 
+  .sidebar__space,
+  .page__header {
+    height: 1.8rem;
+    padding: 1.2rem 1.6rem;
+  }
+
   .sidebar {
     background-color: #f6b506;
     color: #fff;
     width: 248px;
+
+    &__item {
+      align-items: center;
+      background-color: #f2a21d;
+      cursor: pointer;
+      display: flex;
+      font-size: 1.8rem;
+      height: 2.5rem;
+      justify-content: space-around;
+
+      &--arrow {
+        transform: scaleX(0.4);
+      }
+    }
   }
 
   .page {
@@ -89,8 +115,6 @@ export default defineComponent({
       color: #fff;
       display: flex;
       font-size: 2rem;
-      height: 1.8rem;
-      padding: 1.2rem 1.6rem;
     }
 
     &__body {

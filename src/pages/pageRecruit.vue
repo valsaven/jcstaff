@@ -48,11 +48,11 @@ import { defineComponent } from 'vue'
 
 export default defineComponent({
   methods: {
-    hoverClassAdd(event) {
+    hoverClassAdd(event: any) {
       event.target.classList.add('sidebar-item--hovered');
     },
 
-    hoverClassRemove(event) {
+    hoverClassRemove(event: any) {
       event.target.classList.remove('sidebar-item--hovered')
     }
   },

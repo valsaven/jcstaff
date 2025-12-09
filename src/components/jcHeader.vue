@@ -2,10 +2,7 @@
   <div class="jc-header">
     <!-- Logo -->
     <div class="jc-header-logo">
-      <router-link
-        v-slot="{ href, navigate, isActive }"
-        to="/"
-      >
+      <router-link to="/">
         <img src="/logo.gif" class="logo" alt="J.C.STAFF" />
       </router-link>
     </div>
@@ -15,7 +12,7 @@
       <router-link
         v-for="(item, i) in menuItems"
         :key="i"
-        v-slot="{ href, navigate, isActive }"
+        v-slot="{ navigate }"
         :to="`/${item}`"
         custom
       >

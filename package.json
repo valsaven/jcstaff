@@ -1,23 +1,28 @@
 {
   "name": "jcstaff",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.2",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
+    "build": "vue-tsc -b && vite build",
     "preview": "vite preview",
-    "start": "npx http-server dist"
+    "start": "npx -y http-server dist"
   },
   "dependencies": {
-    "vue": "3.2.38",
-    "vue-router": "4.1.5"
+    "vue": "3.5.25",
+    "vue-router": "4.6.3"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "3.0.3",
-    "sass": "1.54.7",
-    "typescript": "4.8.2",
-    "vite": "3.0.9",
-    "vue-tsc": "0.40.5"
+    "@types/node": "^24.10.1",
+    "@vitejs/plugin-vue": "^6.0.1",
+    "@vue/tsconfig": "^0.8.1",
+    "sass": "1.95.0",
+    "typescript": "~5.9.3",
+    "vite": "npm:rolldown-vite@7.2.5",
+    "vue-tsc": "^3.1.4"
+  },
+  "overrides": {
+    "vite": "npm:rolldown-vite@7.2.5"
   }
 }

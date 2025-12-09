@@ -15,7 +15,7 @@
       </div>
 
       <router-link
-        v-slot="{ href, navigate, isActive }"
+        v-slot="{ navigate }"
         to="/company"
         custom
       >

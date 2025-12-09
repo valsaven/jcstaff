@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import jcHeader from './components/jcHeader.vue';
-import jcMain from './components/jcMain.vue';
+// import jcMain from './components/jcMain.vue';
 import jcFooter from './components/jcFooter.vue';
 
-import pageContact from './pages/pageContact.vue';
+// import pageContact from './pages/pageContact.vue';
 </script>
 
 <template>

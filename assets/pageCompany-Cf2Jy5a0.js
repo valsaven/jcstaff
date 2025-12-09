@@ -1,0 +1,1 @@
+import{o as e,r as t,s as n,t as r}from"./index-ySs4j43i.js";var i=e({data(){return{}},computed:{},methods:{},mounted(){}}),a={class:`company`};function o(e,r,i,o,s,c){return n(),t(`div`,a)}var s=r(i,[[`render`,o]]);export{s as default};
